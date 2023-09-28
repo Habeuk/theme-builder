@@ -186,24 +186,44 @@ module.exports = {
       //   test: /\.(woff|woff2|eot|ttf|otf)$/i,
       //   type: "asset/resource"
       // },
-      //règles de compilations pour les images
       // {
-      //   test: /\.(gif|png|jpe?g)$/i,
+      //   test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
       //   use: [
       //     {
-      //       // Using file-loader for these files
-      //       //loader: "file-loader?name=[name].[ext]&outputPath=./images/",
       //       loader: "file-loader",
-      //       // In options we can set different things like format
-      //       // and directory to save
       //       options: {
       //         name: "[name].[ext]",
-      //         outputPath: (__dirname, "/dist/" + CurrentThemeName + "/images")
-      //       }
+      //         outputPath: "fonts/",
+      //       },
       //     },
-      //     { loader: "image-webpack-loader" }
-      //   ]
+      //   ],
       // },
+      //règles de compilations pour les images
+      /**
+       * Le probleme des images est que webpack ne copie pas les images qui sont dans le html.
+       * Donc pour le moment, il faut faire :
+       * - npm run prod ( cela va creer un repertoire dans /dist/'CurrentThemeName' )
+       * - Copie les images dans /dist/'CurrentThemeName'/images
+       * Suite de la recherche : "webpack 5 copy image in html to dist" && https://www.learnhowtoprogram.com/intermediate-javascript/test-driven-development-and-environments-with-javascript/managing-images-with-webpack
+       */
+      {
+        test: /\.(gif|png|jpe?g|webp)$/i,
+        use: [
+          {
+            // Using file-loader for these files
+            //loader: "file-loader?name=[name].[ext]&outputPath=./images/",
+            loader: "file-loader",
+            // In options we can set different things like format
+            // and directory to save
+            options: {
+              name: "[name].[ext]",
+              outputPath: "images/",
+              //  outputPath: (__dirname, "/src/" + CurrentThemeName + "/images"),
+            },
+          },
+          //  { loader: "image-webpack-loader" },
+        ],
+      },
       {
         test: /\.html$/i,
         use: [
@@ -214,7 +234,6 @@ module.exports = {
               preprocessor: (content, loaderContext) => {
                 try {
                   MIH.addUpdate(loaderContext.resource, content);
-
                   // var index = htmlDatasKey.indexOf(loaderContext.resource);
                   // if (index !== -1) {
                   //   console.log("MAJ : ", index);
@@ -237,14 +256,17 @@ module.exports = {
     ],
   },
   devServer: {
-    //contentBase: path.resolve(__dirname, "./public"),
+    // contentBase: path.resolve(__dirname, "./public"),
     // port: 3000,
-    //publicPath: "dist/gp",
-    //watchContentBase: true,
+    // publicPath: "dist/gp",
+    // watchContentBase: true,
     hot: true,
     static: {
       directory: path.join(__dirname, "dist/" + CurrentThemeName),
+      serveIndex: true,
+      publicPath: "/",
     },
+    watchFiles: ["src/*" + CurrentThemeName + "/"],
   },
   optimization: {
     minimizer: [
