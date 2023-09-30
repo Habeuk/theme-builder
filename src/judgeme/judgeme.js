@@ -14,4 +14,8 @@ import './AppShowcase/app';
 import './trust/trust';
 import './plan/plan';
 import './show/show';
-import './user/user'
+import './user/user';
+import './userView/userView';
+import './market/market';
+import './balance/balance'
+import './footer/footer'
