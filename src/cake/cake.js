@@ -11,4 +11,7 @@ import "./menu/menu";
 import "./list/list";
 import "./opinion/opinion";
 import "./people/people";
-import "./mission/mission"
+import "./level/level";
+import "./mission/mission";
+import "./team/team";
+import "./staff/staff"
