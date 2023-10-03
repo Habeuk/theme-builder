@@ -19,7 +19,7 @@ const plugins = [];
 /**
  * Selectionner le theme à afficher lors de la commande npm run serve.
  */
-const CurrentThemeName = "utilitaires";
+const CurrentThemeName = "judgeme";
 //const CurrentThemeName = "aerolome";
 
 plugins.push(
