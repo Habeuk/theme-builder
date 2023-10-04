@@ -16,4 +16,5 @@ import "./mission/mission";
 import "./team/team";
 import "./staff/staff";
 import "./date/date";
-import "./contact/contact"
+import "./contact/contact";
+import "./footer/footer"
