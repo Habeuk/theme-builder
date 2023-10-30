@@ -1,5 +1,3 @@
-
-
 //sections import
 import "@stephane888/wbu-atomique/js/bootstrap/all.js";
 
@@ -17,4 +15,4 @@ import "./team/team";
 import "./staff/staff";
 import "./date/date";
 import "./contact/contact";
-import "./footer/footer"
+import "./footer/footer";

@@ -20,7 +20,6 @@ const plugins = [];
  * Selectionner le theme à afficher lors de la commande npm run serve.
  */
 const CurrentThemeName = "price";
-//const CurrentThemeName = "aerolome";
 
 plugins.push(
   new MiniCssExtractPlugin({
