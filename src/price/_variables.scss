@@ -1,6 +1,6 @@
 @use "@stephane888/wbu-atomique/scss/wbu-ressources-clean.scss" as *;
 // @use "@stephane888/wbu-atomique/scss/variables" as *;
-$wbu-color-primary:rgb(236, 61, 236);
+// Couleur primaire ( y compris la couleur de liens par defaut ).
 $wbu-background:#ed31ed;
 $wbu-color-secondary: #4125dd;
 $space_bottom: 8rem;
@@ -9,4 +9,7 @@ $space_bottom: 8rem;
 $wbu-h2-default-font-size:1.3rem;
 $wbu-h3-font-size:1.1rem;
 $wbu-default-font-size:1rem;
-$wbu-title-font-weight:500
+$wbu-title-font-weight:500;
+
+//margin
+$wbu-margin: 2rem !default;
