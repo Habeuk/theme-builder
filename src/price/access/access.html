@@ -1,51 +1,71 @@
-
-<div class="wix-theme-price space-bottom space-inner-top">
+<div class="wix-theme-price">
   <!--------Table------->
-
-  <ul class="container justify-content-center nav nav-tabs" id="myTab" role="tablist">
-    <li class="nav-item" role="presentation">
-      <button class="d-flex flex-column align-items-center nav-link active bg-light" id="home-tab" data-toggle="tab" data-target="#home" type="button" role="tab"
-        aria-controls="home" aria-selected="true">
-        <span>Forfaits Site internet</span>
-        <span>Idéal pour présenter un site professionnel </span>
-      </button>
-    </li>
-    <li class="nav-item" role="presentation">
-      <button class="d-flex flex-column align-items-center nav-link bg-info text-white" id="profile-tab" data-toggle="tab" data-target="#profile" type="button" role="tab"
-        aria-controls="profile" aria-selected="false">
-       <span>Forfaits Business et eCommerce</span>
-       <span>Essentiel pour accepter les paiements en ligne</span>
-      
-      </button>
-    </li>
-    <li class="nav-item" role="presentation">
-      <button class="d-flex flex-column align-items-center nav-link bg-warning text-white" id="contact-tab" data-toggle="tab" data-target="#contact" type="button" role="tab"
-        aria-controls="contact" aria-selected="false">
-       <span>Forfaits Entreprise</span>
-       <span>Conçus pour les grandes entreprises</span>
-      
-      </button>
-    </li>
-  </ul>
-
+  <div class="tabs-container">
+    <ul class="justify-content-center nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button
+          class="d-flex flex-column align-items-center nav-link active"
+          id="home-tab"
+          data-toggle="tab"
+          data-target="#home"
+          type="button"
+          role="tab"
+          aria-controls="home"
+          aria-selected="true"
+        >
+          <span>Forfaits Site internet</span>
+          <span>Idéal pour présenter un site professionnel </span>
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button
+          class="d-flex flex-column align-items-center nav-link"
+          id="profile-tab"
+          data-toggle="tab"
+          data-target="#profile"
+          type="button"
+          role="tab"
+          aria-controls="profile"
+          aria-selected="false"
+        >
+          <span>Forfaits Business et eCommerce</span>
+          <span>Essentiel pour accepter les paiements en ligne</span>
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button
+          class="d-flex flex-column align-items-center nav-link"
+          id="contact-tab"
+          data-toggle="tab"
+          data-target="#contact"
+          type="button"
+          role="tab"
+          aria-controls="contact"
+          aria-selected="false"
+        >
+          <span>Forfaits Entreprise</span>
+          <span>Conçus pour les grandes entreprises</span>
+        </button>
+      </li>
+    </ul>
+  </div>
 
   <div class="tab-content" id="myTabContent">
     <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-
-      <div class="container text-white p-0">
+      <div class="container p-0">
         <!-----------HEADER SECTION--------------->
-        <div class="heading  text-center bg-secondary">
+        <div class="heading text-center bg-light">
           <div class="column"></div>
-          <div class="column px-5 py-5">
-            <h6>VIP</h6>
+          <div class="column p-3 p-md-5">
+            <h6 class="font-weight-bold h5">VIP</h6>
             <p>Assistance prioritaire</p>
-            <p>
+            <div>
               <?xml version="1.0" encoding="utf-8"?>
               <!-- License: MIT. Made by Jackhenry Design: https://github.com/Banno/jha-design -->
               <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" width="40px" height="40px" viewBox="0 0 24 24">
                 <path d="M23 13H2v-2h21v2z" />
               </svg>
-            </p>
+            </div>
             <div class="align-items-center d-flex font-weight-bold justify-content-center price">
               <div class="h3 line-height-1 m-0 pr-2">24</div>
               <div class="line-height-1">
@@ -54,8 +74,8 @@
               </div>
             </div>
           </div>
-          <div class="column px-5 py-5" id="two">
-            <h6>Illimite</h6>
+          <div class="column p-3 p-md-5" id="two">
+            <h6 class="font-weight-bold h5">Illimite</h6>
             <p>Artisants~independants</p>
             <p>
               <?xml version="1.0" encoding="utf-8"?>
@@ -71,10 +91,9 @@
                 <div>/mois</div>
               </div>
             </div>
-
           </div>
-          <div class="column px-5 py-5 ">
-            <h6>Basique</h6>
+          <div class="column p-3 p-md-5">
+            <h6 class="font-weight-bold h5">Basique</h6>
             <p>Personnel</p>
             <p>
               <?xml version="1.0" encoding="utf-8"?>
@@ -86,14 +105,14 @@
 
             <div class="align-items-center d-flex font-weight-bold justify-content-center price">
               <div class="h3 line-height-1 m-0 pr-2">8</div>
-              <div class=" line-height-1">
+              <div class="line-height-1">
                 <div>50 €</div>
                 <div>/mois</div>
               </div>
             </div>
           </div>
-          <div class="column px-5 py-5 ">
-            <h6>Connection</h6>
+          <div class="column p-3 p-md-5">
+            <h6 class="font-weight-bold h5">Connection</h6>
             <p>Domaine</p>
             <p>
               <?xml version="1.0" encoding="utf-8"?>
@@ -124,7 +143,8 @@
                 <svg width="20px" height="20px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M11 12H9v-.148c0-.876.306-1.499 1-1.852.385-.195 1-.568 1-1a1.001 1.001 0 00-2 0H7c0-1.654 1.346-3 3-3s3 1 3 3-2 2.165-2 3zm-2 3h2v-2H9v2z"
-                    fill="#5C5F62" />
+                    fill="#5C5F62"
+                  />
                   <path d="M10 4a6 6 0 100 12 6 6 0 000-12zm-8 6a8 8 0 1116 0 8 8 0 01-16 0z" fill="#5C5F62" />
                 </svg>
               </p>
@@ -133,32 +153,72 @@
           <div class="column text-center pt-4">
             <?xml version="1.0" encoding="utf-8"?>
             <!-- License: MIT. Made by jaynewey: https://github.com/jaynewey/charm-icons -->
-            <svg width="20px" height="20px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" version="1.1"
-              fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+            <svg
+              width="20px"
+              height="20px"
+              viewBox="0 0 16 16"
+              xmlns="http://www.w3.org/2000/svg"
+              version="1.1"
+              fill="none"
+              stroke="#000000"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.5"
+            >
               <polyline points="2.75 8.75,6.25 12.25,13.25 4.75" />
             </svg>
           </div>
           <div class="column text-center pt-4">
             <?xml version="1.0" encoding="utf-8"?>
             <!-- License: MIT. Made by jaynewey: https://github.com/jaynewey/charm-icons -->
-            <svg width="20px" height="20px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" version="1.1"
-              fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+            <svg
+              width="20px"
+              height="20px"
+              viewBox="0 0 16 16"
+              xmlns="http://www.w3.org/2000/svg"
+              version="1.1"
+              fill="none"
+              stroke="#000000"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.5"
+            >
               <polyline points="2.75 8.75,6.25 12.25,13.25 4.75" />
             </svg>
           </div>
           <div class="column text-center pt-4">
             <?xml version="1.0" encoding="utf-8"?>
             <!-- License: MIT. Made by jaynewey: https://githid="contact-tab"ub.com/jaynewey/charm-icons -->
-            <svg width="20px" height="20px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" version="1.1"
-              fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+            <svg
+              width="20px"
+              height="20px"
+              viewBox="0 0 16 16"
+              xmlns="http://www.w3.org/2000/svg"
+              version="1.1"
+              fill="none"
+              stroke="#000000"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.5"
+            >
               <polyline points="2.75 8.75,6.25 12.25,13.25 4.75" />
             </svg>
           </div>
           <div class="column text-center pt-4">
             <?xml version="1.0" encoding="utf-8"?>
             <!-- License: MIT. Made by jaynewey: https://github.com/jaynewey/charm-icons -->
-            <svg width="20px" height="20px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" version="1.1"
-              fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+            <svg
+              width="20px"
+              height="20px"
+              viewBox="0 0 16 16"
+              xmlns="http://www.w3.org/2000/svg"
+              version="1.1"
+              fill="none"
+              stroke="#000000"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.5"
+            >
               <polyline points="2.75 8.75,6.25 12.25,13.25 4.75" />
             </svg>
           </div>
@@ -174,7 +234,8 @@
                 <svg width="20px" height="20px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M11 12H9v-.148c0-.876.306-1.499 1-1.852.385-.195 1-.568 1-1a1.001 1.001 0 00-2 0H7c0-1.654 1.346-3 3-3s3 1 3 3-2 2.165-2 3zm-2 3h2v-2H9v2z"
-                    fill="#5C5F62" />
+                    fill="#5C5F62"
+                  />
                   <path d="M10 4a6 6 0 100 12 6 6 0 000-12zm-8 6a8 8 0 1116 0 8 8 0 01-16 0z" fill="#5C5F62" />
                 </svg>
               </p>
@@ -183,25 +244,56 @@
           <div class="column text-center py-4">
             <?xml version="1.0" encoding="utf-8"?>
             <!-- License: MIT. Made by jaynewey: https://github.com/jaynewey/charm-icons -->
-            <svg width="20px" height="20px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" version="1.1"
-              fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+            <svg
+              width="20px"
+              height="20px"
+              viewBox="0 0 16 16"
+              xmlns="http://www.w3.org/2000/svg"
+              version="1.1"
+              fill="none"
+              stroke="#000000"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.5"
+            >
               <polyline points="2.75 8.75,6.25 12.25,13.25 4.75" />
             </svg>
           </div>
           <div class="column text-center pt-4">
             <?xml version="1.0" encoding="utf-8"?>
             <!-- License: MIT. Made by jaynewey: https://github.com/jaynewey/charm-icons -->
-            <svg width="20px" height="20px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" version="1.1"
-              fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+            <svg
+              width="20px"
+              height="20px"
+              viewBox="0 0 16 16"
+              xmlns="http://www.w3.org/2000/svg"
+              version="1.1"
+              fill="none"
+              stroke="#000000"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.5"
+            >
               <polyline points="2.75 8.75,6.25 12.25,13.25 4.75" />
             </svg>
           </div>
           <div class="column text-center pt-4">
             <?xml version="1.0" encoding="utf-8"?>
             <!-- License: MIT. Made by jaynewey: https://github.com/jaynewey/charm-icons -->
-            <svg width="20px" height="20px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" version="1.1"
-              fill="none" stroke="#000000" justify-content-between align-items-center stroke-linecap="round"
-              stroke-linejoin="round" stroke-width="1.5">
+            <svg
+              width="20px"
+              height="20px"
+              viewBox="0 0 16 16"
+              xmlns="http://www.w3.org/2000/svg"
+              version="1.1"
+              fill="none"
+              stroke="#000000"
+              justify-content-between
+              align-items-center
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.5"
+            >
               <polyline points="2.75 8.75,6.25 12.25,13.25 4.75" />
             </svg>
           </div>
@@ -219,7 +311,8 @@
                 <svg width="20px" height="20px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M11 12H9v-.148c0-.876.306-1.499 1-1.852.385-.195 1-.568 1-1a1.001 1.001 0 00-2 0H7c0-1.654 1.346-3 3-3s3 1 3 3-2 2.165-2 3zm-2 3h2v-2H9v2z"
-                    fill="#5C5F62" />
+                    fill="#5C5F62"
+                  />
                   <path d="M10 4a6 6 0 100 12 6 6 0 000-12zm-8 6a8 8 0 1116 0 8 8 0 01-16 0z" fill="#5C5F62" />
                 </svg>
               </p>
@@ -228,24 +321,54 @@
           <div class="column text-center pt-4">
             <?xml version="1.0" encoding="utf-8"?>
             <!-- License: MIT. Made by jaynewey: https://github.com/jaynewey/charm-icons -->
-            <svg width="20px" height="20px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" version="1.1"
-              fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+            <svg
+              width="20px"
+              height="20px"
+              viewBox="0 0 16 16"
+              xmlns="http://www.w3.org/2000/svg"
+              version="1.1"
+              fill="none"
+              stroke="#000000"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.5"
+            >
               <polyline points="2.75 8.75,6.25 12.25,13.25 4.75" />
             </svg>
           </div>
           <div class="column text-center pt-4">
             <?xml version="1.0" encoding="utf-8"?>
             <!-- License: MIT. Made by jaynewey: https://github.com/jaynewey/charm-icons -->
-            <svg width="20px" height="20px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" version="1.1"
-              fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+            <svg
+              width="20px"
+              height="20px"
+              viewBox="0 0 16 16"
+              xmlns="http://www.w3.org/2000/svg"
+              version="1.1"
+              fill="none"
+              stroke="#000000"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.5"
+            >
               <polyline points="2.75 8.75,6.25 12.25,13.25 4.75" />
             </svg>
           </div>
           <div class="column text-center pt-4">
             <?xml version="1.0" encoding="utf-8"?>
             <!-- License: MIT. Made by jaynewey: https://github.com/jaynewey/charm-icons -->
-            <svg width="20px" height="20px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" version="1.1"
-              fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+            <svg
+              width="20px"
+              height="20px"
+              viewBox="0 0 16 16"
+              xmlns="http://www.w3.org/2000/svg"
+              version="1.1"
+              fill="none"
+              stroke="#000000"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.5"
+            >
               <polyline points="2.75 8.75,6.25 12.25,13.25 4.75" />
             </svg>
           </div>
@@ -256,12 +379,11 @@
 
     <!-------SECOND TABLE---------->
     <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-
-      <div class="container text-white p-0">
+      <div class="container p-0">
         <!-----------HEADER SECTION--------------->
-        <div class="heading  text-center bg-secondary">
+        <div class="heading text-center bg-light">
           <div class="column"></div>
-          <div class="column px-5 py-5">
+          <div class="column p-3 p-md-5">
             <h6>Businees VIP</h6>
             <p>Le plus complet</p>
             <p>
@@ -279,7 +401,7 @@
               </div>
             </div>
           </div>
-          <div class="column px-5 py-5" id="two">
+          <div class="column p-3 p-md-5" id="two">
             <h6>Business Illimite</h6>
             <p>Satisfaction</p>
             <p>
@@ -296,9 +418,8 @@
                 <div>/mois</div>
               </div>
             </div>
-
           </div>
-          <div class="column px-5 py-5 ">
+          <div class="column p-3 p-md-5">
             <h6>Basique</h6>
             <p>Personnel</p>
             <p>
@@ -311,13 +432,13 @@
 
             <div class="align-items-center d-flex font-weight-bold justify-content-center price">
               <div class="h3 line-height-1 m-0 pr-2">17</div>
-              <div class=" line-height-1">
+              <div class="line-height-1">
                 <div>17€</div>
                 <div>/mois</div>
               </div>
             </div>
           </div>
-          <div class="column px-5 py-5 ">
+          <div class="column p-3 p-md-5">
             <h6>Connection</h6>
             <p>Domaine</p>
             <p>
@@ -349,7 +470,8 @@
                 <svg width="20px" height="20px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M11 12H9v-.148c0-.876.306-1.499 1-1.852.385-.195 1-.568 1-1a1.001 1.001 0 00-2 0H7c0-1.654 1.346-3 3-3s3 1 3 3-2 2.165-2 3zm-2 3h2v-2H9v2z"
-                    fill="#5C5F62" />
+                    fill="#5C5F62"
+                  />
                   <path d="M10 4a6 6 0 100 12 6 6 0 000-12zm-8 6a8 8 0 1116 0 8 8 0 01-16 0z" fill="#5C5F62" />
                 </svg>
               </p>
@@ -358,32 +480,72 @@
           <div class="column text-center pt-4">
             <?xml version="1.0" encoding="utf-8"?>
             <!-- License: MIT. Made by jaynewey: https://github.com/jaynewey/charm-icons -->
-            <svg width="20px" height="20px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" version="1.1"
-              fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+            <svg
+              width="20px"
+              height="20px"
+              viewBox="0 0 16 16"
+              xmlns="http://www.w3.org/2000/svg"
+              version="1.1"
+              fill="none"
+              stroke="#000000"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.5"
+            >
               <polyline points="2.75 8.75,6.25 12.25,13.25 4.75" />
             </svg>
           </div>
           <div class="column text-center pt-4">
             <?xml version="1.0" encoding="utf-8"?>
             <!-- License: MIT. Made by jaynewey: https://github.com/jaynewey/charm-icons -->
-            <svg width="20px" height="20px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" version="1.1"
-              fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+            <svg
+              width="20px"
+              height="20px"
+              viewBox="0 0 16 16"
+              xmlns="http://www.w3.org/2000/svg"
+              version="1.1"
+              fill="none"
+              stroke="#000000"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.5"
+            >
               <polyline points="2.75 8.75,6.25 12.25,13.25 4.75" />
             </svg>
           </div>
           <div class="column text-center pt-4">
             <?xml version="1.0" encoding="utf-8"?>
             <!-- License: MIT. Made by jaynewey: https://github.com/jaynewey/charm-icons -->
-            <svg width="20px" height="20px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" version="1.1"
-              fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+            <svg
+              width="20px"
+              height="20px"
+              viewBox="0 0 16 16"
+              xmlns="http://www.w3.org/2000/svg"
+              version="1.1"
+              fill="none"
+              stroke="#000000"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.5"
+            >
               <polyline points="2.75 8.75,6.25 12.25,13.25 4.75" />
             </svg>
           </div>
           <div class="column text-center pt-4">
             <?xml version="1.0" encoding="utf-8"?>
             <!-- License: MIT. Made by jaynewey: https://github.com/jaynewey/charm-icons -->
-            <svg width="20px" height="20px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" version="1.1"
-              fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+            <svg
+              width="20px"
+              height="20px"
+              viewBox="0 0 16 16"
+              xmlns="http://www.w3.org/2000/svg"
+              version="1.1"
+              fill="none"
+              stroke="#000000"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.5"
+            >
               <polyline points="2.75 8.75,6.25 12.25,13.25 4.75" />
             </svg>
           </div>
@@ -399,7 +561,8 @@
                 <svg width="20px" height="20px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M11 12H9v-.148c0-.876.306-1.499 1-1.852.385-.195 1-.568 1-1a1.001 1.001 0 00-2 0H7c0-1.654 1.346-3 3-3s3 1 3 3-2 2.165-2 3zm-2 3h2v-2H9v2z"
-                    fill="#5C5F62" />
+                    fill="#5C5F62"
+                  />
                   <path d="M10 4a6 6 0 100 12 6 6 0 000-12zm-8 6a8 8 0 1116 0 8 8 0 01-16 0z" fill="#5C5F62" />
                 </svg>
               </p>
@@ -408,25 +571,56 @@
           <div class="column text-center py-4">
             <?xml version="1.0" encoding="utf-8"?>
             <!-- License: MIT. Made by jaynewey: https://github.com/jaynewey/charm-icons -->
-            <svg width="20px" height="20px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" version="1.1"
-              fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+            <svg
+              width="20px"
+              height="20px"
+              viewBox="0 0 16 16"
+              xmlns="http://www.w3.org/2000/svg"
+              version="1.1"
+              fill="none"
+              stroke="#000000"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.5"
+            >
               <polyline points="2.75 8.75,6.25 12.25,13.25 4.75" />
             </svg>
           </div>
           <div class="column text-center pt-4">
             <?xml version="1.0" encoding="utf-8"?>
             <!-- License: MIT. Made by jaynewey: https://github.com/jaynewey/charm-icons -->
-            <svg width="20px" height="20px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" version="1.1"
-              fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+            <svg
+              width="20px"
+              height="20px"
+              viewBox="0 0 16 16"
+              xmlns="http://www.w3.org/2000/svg"
+              version="1.1"
+              fill="none"
+              stroke="#000000"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.5"
+            >
               <polyline points="2.75 8.75,6.25 12.25,13.25 4.75" />
             </svg>
           </div>
           <div class="column text-center pt-4">
             <?xml version="1.0" encoding="utf-8"?>
             <!-- License: MIT. Made by jaynewey: https://github.com/jaynewey/charm-icons -->
-            <svg width="20px" height="20px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" version="1.1"
-              fill="none" stroke="#000000" justify-content-between align-items-center stroke-linecap="round"
-              stroke-linejoin="round" stroke-width="1.5">
+            <svg
+              width="20px"
+              height="20px"
+              viewBox="0 0 16 16"
+              xmlns="http://www.w3.org/2000/svg"
+              version="1.1"
+              fill="none"
+              stroke="#000000"
+              justify-content-between
+              align-items-center
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.5"
+            >
               <polyline points="2.75 8.75,6.25 12.25,13.25 4.75" />
             </svg>
           </div>
@@ -444,7 +638,8 @@
                 <svg width="20px" height="20px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M11 12H9v-.148c0-.876.306-1.499 1-1.852.385-.195 1-.568 1-1a1.001 1.001 0 00-2 0H7c0-1.654 1.346-3 3-3s3 1 3 3-2 2.165-2 3zm-2 3h2v-2H9v2z"
-                    fill="#5C5F62" />
+                    fill="#5C5F62"
+                  />
                   <path d="M10 4a6 6 0 100 12 6 6 0 000-12zm-8 6a8 8 0 1116 0 8 8 0 01-16 0z" fill="#5C5F62" />
                 </svg>
               </p>
@@ -453,24 +648,54 @@
           <div class="column text-center pt-4">
             <?xml version="1.0" encoding="utf-8"?>
             <!-- License: MIT. Made by jaynewey: https://github.com/jaynewey/charm-icons -->
-            <svg width="20px" height="20px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" version="1.1"
-              fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+            <svg
+              width="20px"
+              height="20px"
+              viewBox="0 0 16 16"
+              xmlns="http://www.w3.org/2000/svg"
+              version="1.1"
+              fill="none"
+              stroke="#000000"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.5"
+            >
               <polyline points="2.75 8.75,6.25 12.25,13.25 4.75" />
             </svg>
           </div>
           <div class="column text-center pt-4">
             <?xml version="1.0" encoding="utf-8"?>
             <!-- License: MIT. Made by jaynewey: https://github.com/jaynewey/charm-icons -->
-            <svg width="20px" height="20px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" version="1.1"
-              fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+            <svg
+              width="20px"
+              height="20px"
+              viewBox="0 0 16 16"
+              xmlns="http://www.w3.org/2000/svg"
+              version="1.1"
+              fill="none"
+              stroke="#000000"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.5"
+            >
               <polyline points="2.75 8.75,6.25 12.25,13.25 4.75" />
             </svg>
           </div>
           <div class="column text-center pt-4">
             <?xml version="1.0" encoding="utf-8"?>
             <!-- License: MIT. Made by jaynewey: https://github.com/jaynewey/charm-icons -->
-            <svg width="20px" height="20px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" version="1.1"
-              fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+            <svg
+              width="20px"
+              height="20px"
+              viewBox="0 0 16 16"
+              xmlns="http://www.w3.org/2000/svg"
+              version="1.1"
+              fill="none"
+              stroke="#000000"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.5"
+            >
               <polyline points="2.75 8.75,6.25 12.25,13.25 4.75" />
             </svg>
           </div>
@@ -479,24 +704,42 @@
       </div>
     </div>
 
-     <!---------HERO SECTION--------------->
-  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-    <div class="container p-0 mt-5">
+    <!---------HERO SECTION--------------->
+    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+      <div class="container p-0 mt-5">
         <div class="row justify-content-between">
-        <div class="col-6">
-           <h3>L'agilité en ligne dont votre organisation a besoin</h3>
-            <p>Wix Entreprise permet aux grandes entreprises de créer des sites de haute qualité plus rapidement, de les gérer plus efficacement et de travailler plus librement en éliminant les contraintes de ressources et de dépendance. Découvrez comment nous pouvons aider votre organisation à se libérer des facteurs qui la ralentissent grâce à une gamme complète de solutions adaptées à vos besoins. </p>
+          <div class="col-6">
+            <h3>L'agilité en ligne dont votre organisation a besoin</h3>
+            <p>
+              Wix Entreprise permet aux grandes entreprises de créer des sites de haute qualité plus rapidement, de les gérer plus efficacement et de travailler plus librement en
+              éliminant les contraintes de ressources et de dépendance. Découvrez comment nous pouvons aider votre organisation à se libérer des facteurs qui la ralentissent grâce
+              à une gamme complète de solutions adaptées à vos besoins.
+            </p>
             <button type="button" class="btn btn-info btn-lg rounded-pill mt-3">Learn more</button>
           </div>
-        <div class="col-6">
-          <?xml version="1.0" encoding="utf-8"?>
-          <!-- License: MIT. Made by Twitter: https://github.com/twitter/twemoji -->
-          <svg width="400px" height="400px" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--twemoji" preserveAspectRatio="xMidYMid meet"><path fill="#DD2E44" d="M36 32a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4h28a4 4 0 0 1 4 4v28z"></path><path d="M12.81 6.552c2.263 0 6.667.744 6.667 3.473c0 1.116-.776 2.077-1.923 2.077c-1.271 0-2.139-1.085-4.744-1.085c-3.845 0-5.829 3.256-5.829 7.038c0 3.689 2.015 6.852 5.829 6.852c2.605 0 3.658-1.302 4.93-1.302c1.395 0 2.046 1.395 2.046 2.107c0 2.977-4.682 3.659-6.976 3.659c-6.294 0-10.666-4.992-10.666-11.41c0-6.448 4.341-11.409 10.666-11.409zm8.522 2.604c0-1.55.992-2.418 2.326-2.418s2.326.868 2.326 2.418V24.72h5.518c1.582 0 2.264 1.179 2.232 2.232c-.06 1.025-.867 2.048-2.232 2.048h-7.75c-1.52 0-2.42-.992-2.42-2.543V9.156z" fill="#FFF"></path></svg>
+          <div class="col-6">
+            <?xml version="1.0" encoding="utf-8"?>
+            <!-- License: MIT. Made by Twitter: https://github.com/twitter/twemoji -->
+            <svg
+              width="400px"
+              height="400px"
+              viewBox="0 0 36 36"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              aria-hidden="true"
+              role="img"
+              class="iconify iconify--twemoji"
+              preserveAspectRatio="xMidYMid meet"
+            >
+              <path fill="#DD2E44" d="M36 32a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4h28a4 4 0 0 1 4 4v28z"></path>
+              <path
+                d="M12.81 6.552c2.263 0 6.667.744 6.667 3.473c0 1.116-.776 2.077-1.923 2.077c-1.271 0-2.139-1.085-4.744-1.085c-3.845 0-5.829 3.256-5.829 7.038c0 3.689 2.015 6.852 5.829 6.852c2.605 0 3.658-1.302 4.93-1.302c1.395 0 2.046 1.395 2.046 2.107c0 2.977-4.682 3.659-6.976 3.659c-6.294 0-10.666-4.992-10.666-11.41c0-6.448 4.341-11.409 10.666-11.409zm8.522 2.604c0-1.55.992-2.418 2.326-2.418s2.326.868 2.326 2.418V24.72h5.518c1.582 0 2.264 1.179 2.232 2.232c-.06 1.025-.867 2.048-2.232 2.048h-7.75c-1.52 0-2.42-.992-2.42-2.543V9.156z"
+                fill="#FFF"
+              ></path>
+            </svg>
+          </div>
         </div>
+      </div>
     </div>
   </div>
-  </div>
-  </div>
-  
- 
 </div>
