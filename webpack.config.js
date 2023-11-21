@@ -19,7 +19,7 @@ const plugins = [];
 /**
  * Selectionner le theme à afficher lors de la commande npm run serve.
  */
-const CurrentThemeName = "affiche";
+const CurrentThemeName = "commerce";
 
 plugins.push(
   new MiniCssExtractPlugin({
