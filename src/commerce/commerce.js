@@ -7,6 +7,8 @@ import "./brand-products/brand-products";
 import "./product-display/product-display";
 import "./product-render/product-render";
 import "./product-detail/product-detail";
+import "./product-newsletter/product-newsletter";
+
 
 
 
