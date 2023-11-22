@@ -2,3 +2,11 @@
 @use "@stephane888/wbu-atomique/scss/bootstrap-all.scss";
 @use "@stephane888/wbu-atomique/scss/atome/typography/_default.scss";
 @use "@stephane888/wbu-atomique/scss/molecule/default-class.scss";
+@use "./_variables" as *;
+
+// Corresponding google fonts styles
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+}
