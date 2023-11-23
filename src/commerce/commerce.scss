@@ -2,9 +2,6 @@
 @use "@stephane888/wbu-atomique/scss/bootstrap-all.scss";
 @use "@stephane888/wbu-atomique/scss/atome/typography/_default.scss";
 @use "@stephane888/wbu-atomique/scss/molecule/default-class.scss";
-<<<<<<< HEAD
-@use "./_variables" as *;
-=======
 @use "./_variables" as *;
 
 // Corresponding google fonts styles
@@ -13,4 +10,3 @@
 body {
   font-family: "Poppins", sans-serif;
 }
->>>>>>> 0f5237807810f36b8e33457d121e2158fc597e9d
