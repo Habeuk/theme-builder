@@ -1,0 +1,102 @@
+<html><head> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <script defer src="js/script.js"></script><link href="css/script.css" rel="stylesheet"></head><body><div class="nebuleuse-swiper">
+  <div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div
+        class="swiper-slide"
+        style="background-image: url(images/nature-2.jpg)"
+      ></div>
+      <div
+        class="swiper-slide"
+        style="background-image: url(images/nature-3.jpg)"
+      ></div>
+      <div
+        class="swiper-slide"
+        style="background-image: url(images/nature-4.jpg)"
+      ></div>
+    </div>
+    <!-- controller -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <svg
+      id="cursor-svg"
+      class="d-none"
+      viewBox="0 0 20 20"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M17 9H5.414l3.293-3.293a.999.999 0 1 0-1.414-1.414l-5 5a.999.999 0 0 0 0 1.414l5 5a.997.997 0 0 0 1.414 0 .999.999 0 0 0 0-1.414L5.414 11H17a1 1 0 1 0 0-2z"
+        fill="#5C5F62"
+      />
+    </svg>
+  </div>
+  <div class="slider-thumb mt-3">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div
+        class="swiper-slide col-2"
+        style="background-image: url(images/nature-2.jpg)"
+      ></div>
+      <div
+        class="swiper-slide col-2"
+        style="background-image: url(images/nature-3.jpg)"
+      ></div>
+      <div
+        class="swiper-slide col-2"
+        style="background-image: url(images/nature-4.jpg)"
+      ></div>
+    </div>
+  </div>
+</div>
+<nav class="main-menu">
+  <div class="menu-wrapper">
+    <div class="logo">
+      <a href="#">Logo</a>
+    </div>
+    <input type="checkbox" name="slider" id="menu-btn" />
+    <ul class="nav-links">
+      <label for="menu-btn" class="menu-hamburger close-btn">
+        <i class="fas fa-times"></i>
+      </label>
+      <li class="menu-element">
+        <a href="#">Home</a>
+      </li>
+      <li class="menu-element">
+        <a href="#">About</a>
+      </li>
+      <li class="menu-element">
+        <a href="#" class="desktop-item">Dropdown Menu</a>
+        <input type="checkbox" id="showDrop" />
+        <label for="showDrop" class="mobile-item">Dropdown Menu</label>
+        <ul class="drop-menu">
+          <li>
+            <a href="#">Drop menu 1</a>
+          </li>
+          <li>
+            <a href="#">Drop menu 2</a>
+          </li>
+          <li>
+            <a href="#">Drop menu 3</a>
+          </li>
+          <li>
+            <a href="#">Drop menu 4</a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-element">
+        <a href="#" class="desktop-item">Mega Menu</a>
+        <input type="checkbox" id="showMega" />
+        <label for="showMega" class="mobile-item">Mega Menu</label>
+      </li>
+      <li class="menu-element">
+        <a href="#">Feedback</a>
+      </li>
+    </ul>
+    <label for="menu-btn" class="menu-hamburger menu-btn position-relative">
+      <span class="position-absolute"></span>
+    </label>
+  </div>
+</nav>
+</body></html>
