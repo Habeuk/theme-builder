@@ -19,7 +19,7 @@ const plugins = [];
 /**
  * Selectionner le theme à afficher lors de la commande npm run serve.
  */
-const CurrentThemeName = "renovate";
+const CurrentThemeName = "unicamp";
 
 plugins.push(
   new MiniCssExtractPlugin({
