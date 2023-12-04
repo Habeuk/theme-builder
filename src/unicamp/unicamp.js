@@ -4,3 +4,6 @@ import "@stephane888/wbu-atomique/js/bootstrap/all.js";
 import "./unicamp.scss";
 import "./header/header";
 import "./display/display";
+import "./banner/banner";
+import "./showcase/showcase";
+
