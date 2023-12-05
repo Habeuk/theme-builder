@@ -6,4 +6,5 @@ import "./header/header";
 import "./display/display";
 import "./banner/banner";
 import "./showcase/showcase";
+import "./study/study";
 
