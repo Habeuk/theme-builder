@@ -7,4 +7,4 @@ import "./display/display";
 import "./banner/banner";
 import "./showcase/showcase";
 import "./study/study";
-
+import "./eventy/eventy";
