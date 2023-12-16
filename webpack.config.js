@@ -19,7 +19,8 @@ const plugins = [];
 /**
  * Selectionner le theme à afficher lors de la commande npm run serve.
  */
-const CurrentThemeName = "nebuleuse";
+//const CurrentThemeName = "nebuleuse";
+const CurrentThemeName = "mitor";
 
 plugins.push(
   new MiniCssExtractPlugin({

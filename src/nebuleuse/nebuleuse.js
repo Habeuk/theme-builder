@@ -8,5 +8,5 @@ import "./nebuleuse.scss";
 // === importation des sections ===
 
 // import "./gallery-swiper/gallery-swiper"
-import "./commerce-gallery/commerce-gallery"
-import "./_variables.scss";
+// import "./commerce-gallery/commerce-gallery"
+import "./commerce-gallery-v2/commerce-gallery";
