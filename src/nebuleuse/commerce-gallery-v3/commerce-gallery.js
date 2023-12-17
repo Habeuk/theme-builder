@@ -5,48 +5,48 @@ import "./commerce-gallery.scss";
  */
 import SwiperManager from "@stephane888/wbu-atomique/js/swiper/swiper.js";
 const settingsGalleryThumbs = {
-  centeredSlides: true,
-  centeredSlidesBounds: true,
-  direction: "horizontal",
-  spaceBetween: 10,
-  slidesPerView: 3,
-  freeMode: false,
-  watchSlidesVisibility: true,
-  watchSlidesProgress: true,
-  watchOverflow: true,
-  breakpoints: {
-    480: {
-      direction: "vertical",
-      slidesPerView: 3,
-    },
-  },
+  // centeredSlides: true,
+  // centeredSlidesBounds: true,
+  // direction: "horizontal",
   // spaceBetween: 10,
   // slidesPerView: 3,
-  // freeMode: true,
+  // freeMode: false,
+  // watchSlidesVisibility: true,
   // watchSlidesProgress: true,
+  // watchOverflow: true,
+  // breakpoints: {
+  //   480: {
+  //     direction: "vertical",
+  //     slidesPerView: 3,
+  //   },
+  // },
+  spaceBetween: 10,
+  slidesPerView: 3,
+  freeMode: true,
+  watchSlidesProgress: true,
 };
 /**
  * TOP
  */
 const settingsGalleryTops = {
-  direction: "horizontal",
-  spaceBetween: 10,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  a11y: {
-    prevSlideMessage: "Previous slide",
-    nextSlideMessage: "Next slide",
-  },
-  keyboard: {
-    enabled: true,
-  },
+  // direction: "horizontal",
   // spaceBetween: 10,
   // navigation: {
   //   nextEl: ".swiper-button-next",
   //   prevEl: ".swiper-button-prev",
   // },
+  // a11y: {
+  //   prevSlideMessage: "Previous slide",
+  //   nextSlideMessage: "Next slide",
+  // },
+  // keyboard: {
+  //   enabled: true,
+  // },
+  spaceBetween: 10,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 };
 // set config in each slider.
 document.querySelector(".gallery-top.swiper-full-options").setAttribute("data-swiper", JSON.stringify(settingsGalleryTops));
