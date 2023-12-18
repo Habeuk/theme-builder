@@ -1,0 +1,10 @@
+@use "../variables" as *;
+@use "@stephane888/wbu-atomique/scss/organisme/nebuleuse/scss/commerce-gallery-v3.scss";
+
+// custom style for test
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

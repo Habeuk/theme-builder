@@ -5,105 +5,49 @@ import "./commerce-gallery.scss";
  */
 import SwiperManager from "@stephane888/wbu-atomique/js/swiper/swiper.js";
 const settingsGalleryThumbs = {
-  // centeredSlides: true,
-  // centeredSlidesBounds: true,
-  // direction: "horizontal",
-  // spaceBetween: 10,
-  // slidesPerView: 3,
-  // freeMode: false,
-  // watchSlidesVisibility: true,
-  // watchSlidesProgress: true,
-  // watchOverflow: true,
-  // breakpoints: {
-  //   480: {
-  //     direction: "vertical",
-  //     slidesPerView: 3,
-  //   },
-  // },
-  spaceBetween: 10,
+  direction: "vertical",
+  spaceBetween: 1,
   slidesPerView: 3,
   freeMode: true,
   watchSlidesProgress: true,
+  // Configurations supplementaire.
+  pagination: {
+    el: ".swiper-pagination",
+    type: "bullets",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  //modules: ["Navigation", "Pagination", "Scrollbar"], //not work
 };
 /**
  * TOP
  */
 const settingsGalleryTops = {
-  // direction: "horizontal",
-  // spaceBetween: 10,
-  // navigation: {
-  //   nextEl: ".swiper-button-next",
-  //   prevEl: ".swiper-button-prev",
-  // },
-  // a11y: {
-  //   prevSlideMessage: "Previous slide",
-  //   nextSlideMessage: "Next slide",
-  // },
-  // keyboard: {
-  //   enabled: true,
-  // },
-  spaceBetween: 10,
+  direction: "horizontal",
+  spaceBetween: 1,
+  // Configurations supplementaire.
+  pagination: {
+    el: ".swiper-pagination",
+    type: "bullets", //progressbar|fraction|custom
+    clickable: true,
+  },
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+  scrollbar: {
+    el: ".swiper-scrollbar",
+    draggable: true,
+  },
+  effect: "fade", // slide|fade // module non charger => cube|coverflow|creative|flip/cards
+  //modules: ["Navigation", "Pagination", "Scrollbar"], //not work
 };
 // set config in each slider.
-document.querySelector(".gallery-top.swiper-full-options").setAttribute("data-swiper", JSON.stringify(settingsGalleryTops));
-document.querySelector(".gallery-thumbs.swiper-full-options").setAttribute("data-swiper", JSON.stringify(settingsGalleryThumbs));
+document.querySelector(".galleries-main.swiper-full-options").setAttribute("data-swiper", JSON.stringify(settingsGalleryTops));
+document.querySelector(".galleries-thumb.swiper-full-options").setAttribute("data-swiper", JSON.stringify(settingsGalleryThumbs));
 
 const galleryThumbs = new SwiperManager();
 galleryThumbs.build();
-
-//
-
-// galleryTop.on("slideChangeTransitionStart", function () {
-//   galleryThumbs.slideTo(galleryTop.activeIndex);
-// });
-// galleryThumbs.on("transitionStart", function () {
-//   galleryTop.slideTo(galleryThumbs.activeIndex);
-// });
-
-function test() {
-  var galleryThumbs = new Swiper(".gallery-thumbs", {
-    centeredSlides: true,
-    centeredSlidesBounds: true,
-    direction: "horizontal",
-    spaceBetween: 10,
-    slidesPerView: 3,
-    freeMode: false,
-    watchSlidesVisibility: true,
-    watchSlidesProgress: true,
-    watchOverflow: true,
-    breakpoints: {
-      480: {
-        direction: "vertical",
-        slidesPerView: 3,
-      },
-    },
-  });
-  var galleryTop = new Swiper(".gallery-top", {
-    direction: "horizontal",
-    spaceBetween: 10,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    a11y: {
-      prevSlideMessage: "Previous slide",
-      nextSlideMessage: "Next slide",
-    },
-    keyboard: {
-      enabled: true,
-    },
-    thumbs: {
-      swiper: galleryThumbs,
-    },
-  });
-  galleryTop.on("slideChangeTransitionStart", function () {
-    galleryThumbs.slideTo(galleryTop.activeIndex);
-  });
-  galleryThumbs.on("transitionStart", function () {
-    galleryTop.slideTo(galleryThumbs.activeIndex);
-  });
-}
