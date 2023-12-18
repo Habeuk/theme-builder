@@ -1,7 +1,7 @@
 import "./commerce-gallery.html";
 import "./commerce-gallery.scss";
 /**
- * Pour l'env Drupal, il faudra importer : import "@stephane888/wbu-atomique/js/swiper/swiper-drupal.js";
+ * Pour l'env. Drupal, il faudra importer : import "@stephane888/wbu-atomique/js/swiper/swiper-drupal.js";
  */
 import SwiperManager from "@stephane888/wbu-atomique/js/swiper/swiper.js";
 const settingsGalleryThumbs = {
