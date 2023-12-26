@@ -19,7 +19,7 @@ const plugins = [];
 /**
  * Selectionner le theme à afficher lors de la commande npm run serve.
  */
-const CurrentThemeName = "elegant";
+const CurrentThemeName = "renovate";
 
 plugins.push(
   new MiniCssExtractPlugin({
