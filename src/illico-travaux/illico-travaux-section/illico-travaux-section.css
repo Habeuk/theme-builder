@@ -1,0 +1,322 @@
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+.reassurance-section-handler {
+  background: #b9d2e9;
+  background-position: cover;
+  width: 100vw;
+}
+.reassurance-section-handler #reassurance .container .contenu .title {
+  color: #1d1d1d;
+  font-size: 3rem;
+  font-weight: 100;
+  font-family: "Raleway", sans;
+  margin-top: 40px;
+  width: 100%;
+}
+.reassurance-section-handler #reassurance .container .contenu .title .sub-title {
+  color: #085796;
+  font-size: 2rem;
+  font-weight: 900;
+  font-family: "Roboto", sans-serif;
+}
+.reassurance-section-handler #reassurance .container .contenu .title .shape {
+  margin-top: 25px;
+  left: 0;
+  bottom: 0;
+  width: 60px;
+  height: 0;
+  margin-left: 0px;
+  border-bottom: 1px solid #085796;
+}
+.reassurance-section-handler #reassurance .container .contenu .description {
+  position: relative;
+  padding-right: 150px;
+  font-size: 0.99rem;
+  color: #1d1d1d;
+  font-family: "Roboto", sans-serif;
+}
+.reassurance-section-handler #reassurance .container .liste-atout {
+  list-style-type: none;
+  position: relative;
+  margin-top: 15px;
+}
+.reassurance-section-handler #reassurance .container .liste-atout .atout-1 {
+  display: flex;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+.reassurance-section-handler #reassurance .container .liste-atout .atout-1 span {
+  display: block;
+  position: relative;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  background: transparent;
+  overflow: hidden;
+}
+.reassurance-section-handler #reassurance .container .liste-atout .atout-1 span i svg path {
+  fill: #085796;
+}
+.reassurance-section-handler #reassurance .container .liste-atout .atout-1 .content-atout {
+  margin-left: 15px;
+  position: relative;
+  max-width: 50%;
+}
+.reassurance-section-handler #reassurance .container .liste-atout .atout-1 .content-atout h3 {
+  font-size: 1.4rem;
+  font-family: "Raleway", sans;
+  margin-bottom: 15px;
+  font-weight: 350;
+}
+.reassurance-section-handler #reassurance .container .liste-atout .atout-1 .content-atout h3 b {
+  color: #f08001;
+}
+.reassurance-section-handler #reassurance .container .liste-atout .atout-1 .content-atout p {
+  display: block;
+  color: #1d1d1d;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+}
+.reassurance-section-handler #reassurance .container .liste-atout .atout-2 {
+  display: flex;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+.reassurance-section-handler #reassurance .container .liste-atout .atout-2 span {
+  display: block;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  background: transparent;
+  overflow: hidden;
+}
+.reassurance-section-handler #reassurance .container .liste-atout .atout-2 span i svg path {
+  fill: #085796;
+}
+.reassurance-section-handler #reassurance .container .liste-atout .atout-2 .content-atout {
+  margin-left: 15px;
+  position: relative;
+  max-width: 50%;
+}
+.reassurance-section-handler #reassurance .container .liste-atout .atout-2 .content-atout h3 {
+  font-size: 1.4rem;
+  font-family: "Raleway", sans;
+  margin-bottom: 15px;
+  font-weight: 350;
+}
+.reassurance-section-handler #reassurance .container .liste-atout .atout-2 .content-atout h3 b {
+  color: #f08001;
+}
+.reassurance-section-handler #reassurance .container .liste-atout .atout-2 .content-atout p {
+  display: block;
+  color: #1d1d1d;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+}
+.reassurance-section-handler #reassurance .container .liste-atout .atout-3 {
+  display: flex;
+  margin-top: 30px;
+  margin-left: 10px;
+}
+.reassurance-section-handler #reassurance .container .liste-atout .atout-3 span {
+  display: block;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  background: transparent;
+  overflow: hidden;
+}
+.reassurance-section-handler #reassurance .container .liste-atout .atout-3 span i svg path {
+  fill: #085796;
+}
+.reassurance-section-handler #reassurance .container .liste-atout .atout-3 .content-atout {
+  margin-left: 15px;
+  position: relative;
+  max-width: 50%;
+}
+.reassurance-section-handler #reassurance .container .liste-atout .atout-3 .content-atout h3 {
+  font-size: 1.4rem;
+  font-family: "Raleway", sans;
+  margin-bottom: 15px;
+  font-weight: 350;
+}
+.reassurance-section-handler #reassurance .container .liste-atout .atout-3 .content-atout h3 b {
+  color: #f08001;
+}
+.reassurance-section-handler #reassurance .container .liste-atout .atout-3 .content-atout p {
+  display: block;
+  color: #1d1d1d;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+}
+.reassurance-section-handler #reassurance .container .liste-atout .atout-4 {
+  display: flex;
+  margin-left: 20px;
+}
+.reassurance-section-handler #reassurance .container .liste-atout .atout-4 span {
+  display: block;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  background: transparent;
+  overflow: hidden;
+}
+.reassurance-section-handler #reassurance .container .liste-atout .atout-4 span i svg path {
+  fill: #085796;
+}
+.reassurance-section-handler #reassurance .container .liste-atout .atout-4 .content-atout {
+  margin-left: 15px;
+  position: relative;
+  max-width: 50%;
+}
+.reassurance-section-handler #reassurance .container .liste-atout .atout-4 .content-atout h3 {
+  font-size: 1.4rem;
+  font-family: "Raleway", sans;
+  margin-bottom: 15px;
+  font-weight: 350;
+}
+.reassurance-section-handler #reassurance .container .liste-atout .atout-4 .content-atout h3 b {
+  color: #f08001;
+}
+.reassurance-section-handler #reassurance .container .liste-atout .atout-4 .content-atout p {
+  display: block;
+  color: #1d1d1d;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+}
+.reassurance-section-handler #reassurance .container .liste-atout .atout-5 {
+  display: flex;
+  margin-left: 40px;
+}
+.reassurance-section-handler #reassurance .container .liste-atout .atout-5 span {
+  display: block;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  background: transparent;
+  overflow: hidden;
+}
+.reassurance-section-handler #reassurance .container .liste-atout .atout-5 span i svg path {
+  fill: #085796;
+}
+.reassurance-section-handler #reassurance .container .liste-atout .atout-5 .content-atout {
+  margin-left: 15px;
+  position: relative;
+  max-width: 50%;
+}
+.reassurance-section-handler #reassurance .container .liste-atout .atout-5 .content-atout h3 {
+  font-size: 1.4rem;
+  font-family: "Raleway", sans;
+  margin-bottom: 15px;
+  font-weight: 350;
+}
+.reassurance-section-handler #reassurance .container .liste-atout .atout-5 .content-atout h3 b {
+  color: #f08001;
+}
+.reassurance-section-handler #reassurance .container .liste-atout .atout-5 .content-atout p {
+  display: block;
+  color: #1d1d1d;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+}
+.reassurance-section-handler #reassurance .container .liste-atout .float-btn {
+  margin-top: 70px;
+  margin-left: 35px;
+  border: 0px solid transparent;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+  background: #f08001;
+  height: -moz-max-content;
+  height: max-content;
+  width: -moz-max-content;
+  width: max-content;
+  white-space: nowrap;
+  padding: 10px 20px 10px 20px;
+  border-radius: 30px;
+  font-family: "Roboto", sans;
+}
+.reassurance-section-handler #reassurance .container .liste-atout .float-btn a {
+  color: #fff;
+  font-weight: 800;
+}
+.reassurance-section-handler #reassurance .container .macaron {
+  position: absolute;
+  margin-top: -800px;
+  margin-left: 800px;
+}
+.reassurance-section-handler #reassurance .mascotte {
+  margin-left: 33%;
+  position: absolute;
+  margin-top: -550px;
+}
+
+@media only screen and (max-width: 993px) {
+  .liste-atout {
+    display: block;
+    margin-top: 10px;
+    margin-left: 0px;
+  }
+  .liste-atout .atout-1 {
+    margin-left: 0px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+  }
+  .liste-atout .atout-2 {
+    margin-left: 0px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    position: relative;
+  }
+  .liste-atout .atout-3 {
+    margin-left: 0px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    position: relative;
+  }
+  .liste-atout .atout-4 {
+    margin-left: 0px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    position: relative;
+  }
+  .liste-atout .atout-5 {
+    position: relative;
+    margin-left: 0px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  .macaron {
+    display: none;
+  }
+  .mascotte {
+    display: none;
+  }
+}/*# sourceMappingURL=illico-travaux-section.css.map */

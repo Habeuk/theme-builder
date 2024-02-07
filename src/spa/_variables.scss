@@ -1,0 +1,19 @@
+@use "@stephane888/wbu-atomique/scss/wbu-ressources-clean.scss" as *;
+@use "@stephane888/wbu-atomique/scss/_variables.scss" as *;
+
+
+$wbu-color-primary: white;
+$wbu-border-color: #fff;
+$wbu-background: #e76f51;
+
+$wbu-btn-border-radius: 30px !default;
+
+$wbu-margin: 2rem !default;
+$wbu-title-font-weight: 400 !default;
+$wbu-title-font-family: inherit !default;
+
+$wbu-h1-font-size: $wbu-default-font-size * 3.5 !default; //56px
+
+$wbu-padding: 2rem !default;
+
+$wbu-default-font-size: 1.6rem !default;

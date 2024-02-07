@@ -1,5 +1,4 @@
 import "./hotel.scss";
-// import "./evenex-countdown/countdown"
-//import "@stephane888/wbu-atomique/js/bootstrap/all.js";
+import "@stephane888/wbu-atomique/js/bootstrap/all.js";
 
-import "./type_section";
+import "./type_section/type_section";
