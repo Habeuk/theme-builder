@@ -1,9 +1,8 @@
 @use "@stephane888/wbu-atomique/scss/wbu-ressources-clean.scss" as *;
 @use "@stephane888/wbu-atomique/scss/_variables.scss" as *;
 
-
-$wbu-color-primary: white;
-$wbu-border-color: #fff;
+$wbu-color-primary: rgb(245, 17, 17);
+$wbu-border-color: #ffffff93;
 $wbu-background: #e76f51;
 
 $wbu-btn-border-radius: 30px !default;
@@ -19,4 +18,4 @@ $wbu-padding: 2rem !default;
 
 $wbu-default-font-size: 1.6rem !default;
 $wbu-color-secondary: #ed947e;
-$wbu-color-boder: orange ;
+$wbu-color-boder: orange;

@@ -1,0 +1,10 @@
+.cm-editor,
+textarea {
+  height: 300px;
+  border: 1px solid #ddd;
+  width: 100%;
+  font-size: 1rem;
+}
+.cm-scroller {
+  overflow: auto;
+}

@@ -1,0 +1,20 @@
+@use "../_variables" as *;
+@use "@stephane888/wbu-atomique/scss/wbu-ressources-clean.scss" as *;
+// uniqquement pour des tests.
+.testslider.swiper-full-options {
+  .swiper-wrapper {
+    height: 500px;
+    transition-timing-function: linear;
+    .swiper-slide {
+      overflow: hidden;
+      min-height: 500px;
+      height: 500px;
+      background: $wbu-background;
+      img {
+        max-width: 1500px;
+        width: auto;
+        height: 100%;
+      }
+    }
+  }
+}
