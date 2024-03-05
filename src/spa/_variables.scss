@@ -1,21 +1,22 @@
-@use "@stephane888/wbu-atomique/scss/wbu-ressources-clean.scss" as *;
-@use "@stephane888/wbu-atomique/scss/_variables.scss" as *;
 
-$wbu-color-primary: rgb(245, 17, 17);
+
+
 $wbu-border-color: #ffffff93;
-$wbu-background: #e76f51;
+$wbu-background: #e76f51 ;
+//$wbu-color-secondary: #ee8700 ;
 
-$wbu-btn-border-radius: 30px !default;
+$wbu-btn-border-radius: 30px ;
 
-$wbu-margin: 2rem !default;
-$wbu-title-font-weight: 400 !default;
-$wbu-default-line-height: 1.3 !default;
-$wbu-title-font-family: inherit !default;
+$wbu-margin: 2rem ;
+$wbu-title-font-weight: 400 ;
+$wbu-default-line-height: 1.3 ;
+$wbu-title-font-family: inherit;
 
-$wbu-h1-font-size: $wbu-default-font-size * 3.5 !default; //56px
 
-$wbu-padding: 2rem !default;
 
-$wbu-default-font-size: 1.6rem !default;
+$wbu-padding: 2rem ;
+
+$wbu-default-font-size: 1.6rem ;
 $wbu-color-secondary: #ed947e;
 $wbu-color-boder: orange ;
+@import "@stephane888/wbu-atomique/scss/wbu-ressources-clean.scss" ;
