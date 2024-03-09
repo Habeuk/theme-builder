@@ -1,7 +1,8 @@
-@use "@stephane888/wbu-atomique/scss/wbu-ressources-clean.scss" as *;
+@use "./_variables" as * ;
+
 @use "@stephane888/wbu-atomique/scss/bootstrap-all.scss";
 @use "@stephane888/wbu-atomique/scss/atome/typography/_default.scss";
 @use "@stephane888/wbu-atomique/scss/molecule/default-class.scss";
-@use "./_variables" as *;
+@import "@stephane888/wbu-atomique/scss/wbu-ressources-clean.scss" ;
 
-@use "./testslider/index.scss";
+//use "./testslider/index.scss";

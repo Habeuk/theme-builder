@@ -61,7 +61,7 @@
       </div>
     </div>
     <div class="col-md-4 py-4">
-      <div class="py-4">
+      <div id="custom-accordion" class="py-4 accordion fields-box">
         <div class="field-box pb-4">
           <div
             class="field-meta btn btn-block p-0 border-0"
@@ -81,7 +81,12 @@
 
             <div class="field-title font-weight-bold">Professional Team</div>
           </div>
-          <div class="collapse" id="first">
+          <div
+            class="collapse"
+            id="first"
+            aria-labelledby="first"
+            data-parent="#custom-accordion"
+          >
             <div class="field-description h6 text-black-50">
               With a team of engineers and highly specialized workers, we ensure
               the products we make will be extremely quality. consectetur
@@ -108,7 +113,7 @@
 
             <div class="field-title font-weight-bold">Professional Team</div>
           </div>
-          <div class="collapse" id="second">
+          <div class="collapse" id="second" data-parent="#custom-accordion">
             <div class="field-description h6 text-black-50">
               With a team of engineers and highly specialized workers, we ensure
               the products we make will be extremely quality. consectetur
@@ -135,7 +140,7 @@
 
             <div class="field-title font-weight-bold">Professional Team</div>
           </div>
-          <div class="collapse" id="third">
+          <div class="collapse" data-parent="#custom-accordion" id="third">
             <div class="field-description h6 text-black-50">
               With a team of engineers and highly specialized workers, we ensure
               the products we make will be extremely quality. consectetur
@@ -147,9 +152,9 @@
           <div
             class="field-meta btn btn-block p-0 border-0"
             data-toggle="collapse"
-            data-target="#first"
+            data-target="#fourth"
             aria-expanded="true"
-            aria-controls="#first"
+            aria-controls="#fourth"
           >
             <div class="field-icon text-light">
               <svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
@@ -162,7 +167,7 @@
 
             <div class="field-title font-weight-bold">Professional Team</div>
           </div>
-          <div class="collapse" id="first">
+          <div class="collapse" data-parent="#custom-accordion" id="fourth">
             <div class="field-description h6 text-black-50">
               With a team of engineers and highly specialized workers, we ensure
               the products we make will be extremely quality. consectetur
