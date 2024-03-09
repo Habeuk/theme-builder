@@ -5,7 +5,8 @@ import "./spa.scss";
 //import "./section-x/section-x"
 //import "./section-x/section-x"
 //import "./section-y/section-y"
-import "./section2/section2"
+// import "./section2/section2"
 //import "./produits/produits"
 //mport "./galeries/galeries"
 //import "./sale/sale"
+import "./testslider/index";
