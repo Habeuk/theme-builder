@@ -1,0 +1,47 @@
+@use "../variables" as *;
+@use "@stephane888/wbu-atomique/scss/wbu-ressources-clean.scss" as *;
+// Cette marge doit etre recuperer par le le conteneur parent.
+$marge: 10px;
+.dynamic-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: -$marge;
+  margin-right: -$marge;
+  // max-width: 30%;
+  > * {
+    margin-bottom: $marge * 2;
+    flex: 1 1 0;
+    width: 100%;
+    padding-left: $marge;
+    padding-right: $marge;
+    min-width: 250px;
+    max-width: 100%;
+  }
+  @include media-min("SM") {
+    flex-direction: row;
+    //
+    flex-wrap: wrap;
+    > * {
+      // width: 50%;
+      min-width: 50%;
+    }
+  }
+  &--3 {
+    @include media-min("DD") {
+      flex-wrap: wrap;
+      > * {
+        min-width: 33%;
+      }
+    }
+  }
+  &--4 {
+    @include media-min("DD") {
+      flex-wrap: wrap;
+      > * {
+        // width: 25%;
+        min-width: 25%;
+      }
+    }
+  }
+}
