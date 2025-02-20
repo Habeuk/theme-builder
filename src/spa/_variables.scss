@@ -1,9 +1,18 @@
+<<<<<<< HEAD
 
 
 
 $wbu-border-color: #ffffff93;
 $wbu-background: #e76f51 ;
 //$wbu-color-secondary: #ee8700 ;
+=======
+@use "@stephane888/wbu-atomique/scss/wbu-ressources-clean.scss" as *;
+
+
+$wbu-border-color: #ffffff93;
+$wbu-background: #e76f51;
+$wbu-color-secondary: #ee8700 !default;
+>>>>>>> d1fd764f (pop up de telechargement de theme)
 
 $wbu-btn-border-radius: 30px ;
 
