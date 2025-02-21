@@ -1,0 +1,49 @@
+<section class="restored_section_team restored_section_menu_repas">
+  <div class="container">
+    <div class="teaser_title_name whatsapp-widget">
+      <!-- Le bouton WhatsApp flottant -->
+      <div class="whatsapp-btn">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+      </div>
+
+      <!-- Textarea pour envoyer un message -->
+      <div class="whatsapp-chat" >
+        <!-- Bouton de fermeture du chat -->
+        <div class="butonclose d-flex justify-content-end mb-4">
+          <button class="d-flex justify-content-center icone-close">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+              <path
+                d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Zone de message -->
+        <textarea class="mb-4 whatsapp-message"  placeholder="Écris ton message..."></textarea>
+        <button class="whatsapp-message-btn">Envoyer</button>
+      </div>
+
+      <script>
+        // Quand l'utilisateur clique sur le bouton, afficher le textarea et masquer le bouton WhatsApp
+        document.getElementById("whatsapp-btn").addEventListener("click", function () {
+          document.getElementById("whatsapp-chat").style.display = "block";  // Affiche la zone de message
+          document.getElementById("whatsapp-btn").style.display = "none";   // Cache le bouton WhatsApp
+        });
+
+        // Fonction pour envoyer le message via WhatsApp
+        function envoyerMessage() {
+          var message = document.getElementById("whatsapp-message").value;
+          var numero = "+237658647156";  // Remplace par ton numéro WhatsApp
+          var url = "https://wa.me/" + numero + "?text=" + encodeURIComponent(message);
+          window.open(url, "_blank");  // Ouvre WhatsApp avec le message
+        }
+
+        // Fonction pour fermer le chat
+        function closebox() {
+          document.getElementById("whatsapp-chat").style.display = "none"; // Cache la zone de message
+          document.getElementById("whatsapp-btn").style.display = "block"; // Réaffiche le bouton WhatsApp
+        }
+      </script>
+    </div>
+  </div>
+</section>

@@ -19,11 +19,7 @@ const plugins = [];
 /**
  * Selectionner le theme à afficher lors de la commande npm run serve.
  */
-<<<<<<< HEAD
-const CurrentThemeName = "spa";
-=======
 const CurrentThemeName = "restoRed";
->>>>>>> d1fd764f (pop up de telechargement de theme)
 
 plugins.push(
   new MiniCssExtractPlugin({
