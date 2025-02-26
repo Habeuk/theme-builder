@@ -5,6 +5,7 @@ import "./pagination/pagination.js";
 // import "./mega-menu/mega-menu";
 
 import "./mega-menu-www.marseille.aeroport.fr/mega-menu";
+import "./colissimo/colissimo.js";
 //
 // try to load image
 import brokenHandcuffs from "./images/chambre-style-campagne-chic.webp";
@@ -16,3 +17,4 @@ img.setAttribute("width", "817");
 img.setAttribute("height", "460");
 const imgContainer = document.querySelector("#image_load_here");
 imgContainer.appendChild(img);
+//
