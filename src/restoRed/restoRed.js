@@ -6,7 +6,7 @@ import "./redModel/redModel";
     import "./sectionPopular/sectionPopular"
  //   import "./sectionTeam/sectionTeam"
     import "./sectionCountDown/sectionCountDown"*/
-    import "./sectionBlogs/sectionBlogs"
+    //import "./sectionBlogs/sectionBlogs"
     import "./restoRedFooter/restoRedFooter"
   //  import "./sectionbouton/sectionbouton"
-  import "./sectionboutonWhat/sectionboutonWhat"
+ // import "./sectionboutonWhat/sectionboutonWhat"
