@@ -20,7 +20,7 @@ const plugins = [];
  * Selectionner le theme à afficher lors de la commande npm run serve.
  */
 // const CurrentThemeName = "restoRed";
-const CurrentThemeName = "text-typing";
+const CurrentThemeName = "propiej";
 
 plugins.push(
   new MiniCssExtractPlugin({

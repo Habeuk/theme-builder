@@ -3,3 +3,24 @@
 @use "@stephane888/wbu-atomique/scss/bootstrap-all.scss";
 @use "@stephane888/wbu-atomique/scss/atome/typography/_default.scss";
 @use "@stephane888/wbu-atomique/scss/molecule/default-class.scss";
+//Override vraible
+:root {
+  --bs-border-radius: 0.9rem;
+  --bs-border-radius-sm: 0.5rem;
+}
+
+/**
+ * Btn
+ */
+.btn {
+  &:hover {
+    box-shadow: 4px 4px 15px -10px #5f5f5f;
+  }
+  &-primary,
+  &-primary:hover {
+    color: #fff;
+  }
+  &-sm {
+    padding-inline: 2rem;
+  }
+}

@@ -1,0 +1,16 @@
+@use "../../../_variables.scss" as *;
+.site_header {
+  &__top {
+    border-bottom: 0.1rem solid $wbu-border-color;
+  }
+  &__socials {
+    svg {
+      width: 2.1rem;
+      fill: $wbu-color-secondary;
+    }
+    li a {
+      display: block;
+      padding: 0 0.4rem;
+    }
+  }
+}
