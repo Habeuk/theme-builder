@@ -1,0 +1,24 @@
+@use "../variables" as *;
+@use "@stephane888/wbu-atomique/scss/wbu-ressources-clean.scss" as *;
+.typing-content-m1 {
+  .fixed-part {
+    display: inline;
+  }
+  .dynamic-part {
+    display: inline;
+    color: $wbu-color-primary; /* Couleur bleue pour la partie dynamique */
+    font-weight: bold;
+    border-right: 2px solid $wbu-color-primary;
+    animation: blink-caret 1s step-end infinite;
+    padding-right: 3px;
+  }
+  @keyframes blink-caret {
+    from,
+    to {
+      border-width: 0;
+    }
+    30% {
+      border-width: 3px;
+    }
+  }
+}

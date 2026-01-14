@@ -1,0 +1,50 @@
+@use "../variables";
+.chatgpt {
+  .typing-container {
+    font-size: 32px;
+    font-family: "Courier New", monospace;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 50px;
+  }
+
+  .typing-text {
+    background: linear-gradient(270deg, #ff6b6b, #ffd93d, #6bc5ff, #a36bff);
+    background-size: 600% 600%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientMove 5s ease infinite;
+    display: inline-block;
+    transition: opacity 0.4s ease;
+  }
+
+  @keyframes gradientMove {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .cursor {
+    display: inline-block;
+    width: 8px;
+    background-color: #ff6b6b;
+    margin-left: 3px;
+    animation: slideCursor 1s infinite;
+  }
+
+  @keyframes slideCursor {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+  }
+}
