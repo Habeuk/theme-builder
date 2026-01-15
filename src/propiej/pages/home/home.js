@@ -7,3 +7,4 @@ import "./sections/projet_entete/projet_entete.js";
 import "./sections/blogs/blogs.js";
 import "./sections/avis/avis.js";
 import "./sections/call_action/call_action.js";
+import "../layouts/footer/footer.js";
