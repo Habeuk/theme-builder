@@ -3,6 +3,7 @@
 @use "@stephane888/wbu-atomique/scss/bootstrap-all.scss";
 @use "@stephane888/wbu-atomique/scss/atome/typography/_default.scss";
 @use "@stephane888/wbu-atomique/scss/molecule/default-class.scss";
+@use "@stephane888/wbu-atomique/scss/drupal/ajustement.scss";
 //Override vraible
 :root {
   --bs-border-radius: 0.5rem;
@@ -23,5 +24,44 @@
   }
   &-sm {
     padding-inline: 2rem;
+  }
+}
+/**
+ * titre + trait à gauche et ...
+ */
+.titre-with-left-line {
+  position: relative;
+  padding-left: 4rem;
+  text-transform: uppercase;
+  @include media-min(SM) {
+    padding-left: 8rem;
+  }
+  @include media-min(DD) {
+    padding-left: 12rem;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    border-bottom: 0.2rem solid #000;
+    width: 3rem;
+
+    @include media-min(SM) {
+      width: 7rem;
+    }
+    @include media-min(DD) {
+      width: 10rem;
+    }
+  }
+}
+
+/**
+ * Section base
+ */
+.section {
+  h2 {
+    margin-bottom: $wbu-margin * 1.8;
+    font-weight: 600;
   }
 }
