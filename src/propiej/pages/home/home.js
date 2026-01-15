@@ -5,3 +5,4 @@ import "./sections/partenaires/partenaires.js";
 import "./sections/infos/infos.js";
 import "./sections/projet_entete/projet_entete.js";
 import "./sections/blogs/blogs.js";
+import "./sections/avis/avis.js";
