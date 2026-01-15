@@ -13,4 +13,18 @@
       padding: 0 0.4rem;
     }
   }
+  &__menus {
+    .logo {
+      max-width: 100px;
+    }
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          @include media-min(DD) {
+            padding: 3rem 1.5rem;
+          }
+        }
+      }
+    }
+  }
 }
