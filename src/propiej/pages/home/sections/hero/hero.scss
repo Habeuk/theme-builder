@@ -1,0 +1,48 @@
+@use "../../../../_variables.scss" as *;
+.hero-section {
+  color: #fff;
+  background-image: url("/dist/propiej/images/hero-home.jpg");
+  background-size: auto 150%;
+  background-position: left top;
+  &::before {
+    content: "";
+    position: absolute;
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 79.2%);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+  .container {
+    position: relative;
+    z-index: 2;
+  }
+  .titre {
+    margin-bottom: $wbu-margin;
+    @include media-min(SM) {
+      margin-bottom: $wbu-margin * 1.5;
+    }
+    @include media-min(DD) {
+      margin-bottom: $wbu-margin * 3;
+    }
+  }
+  .description {
+    margin-bottom: $wbu-margin * 0.8;
+    @include media-min(SM) {
+      margin-bottom: $wbu-margin * 1.2;
+    }
+    @include media-min(DD) {
+      margin-bottom: $wbu-margin * 2.4;
+    }
+  }
+  .infos {
+    margin-bottom: $wbu-margin * 0.5;
+    @include media-min(SM) {
+      margin-bottom: $wbu-margin;
+    }
+    @include media-min(DD) {
+      margin-bottom: $wbu-margin * 1.5;
+    }
+  }
+}

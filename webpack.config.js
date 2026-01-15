@@ -119,7 +119,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "dist/" + CurrentThemeName),
     filename: "js/[name].js",
-    assetModuleFilename: "images/[name][ext]",
+    //assetModuleFilename: "images/[name][ext]",
   },
   devtool: devMode ? "inline-source-map" : false,
   module: {
@@ -207,22 +207,11 @@ module.exports = {
        * Suite de la recherche : "webpack 5 copy image in html to dist" && https://www.learnhowtoprogram.com/intermediate-javascript/test-driven-development-and-environments-with-javascript/managing-images-with-webpack
        */
       {
-        test: /\.(gif|png|jpe?g|webp)$/i,
-        use: [
-          {
-            // Using file-loader for these files
-            //loader: "file-loader?name=[name].[ext]&outputPath=./images/",
-            loader: "file-loader",
-            // In options we can set different things like format
-            // and directory to save
-            options: {
-              name: "[name].[ext]",
-              outputPath: "images/",
-              //  outputPath: (__dirname, "/src/" + CurrentThemeName + "/images"),
-            },
-          },
-          //  { loader: "image-webpack-loader" },
-        ],
+        test: /\.(gif|png|jpe?g|webp|svg)$/i,
+        type: "asset/resource",
+        generator: {
+          filename: "images/[name][ext][query]",
+        },
       },
       {
         test: /\.html$/i,
