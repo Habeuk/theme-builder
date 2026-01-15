@@ -30,28 +30,30 @@
  * titre + trait à gauche et ...
  */
 .titre-with-left-line {
-  position: relative;
-  padding-left: 4rem;
   text-transform: uppercase;
-  @include media-min(SM) {
-    padding-left: 8rem;
-  }
-  @include media-min(DD) {
-    padding-left: 12rem;
-  }
+  display: flex;
+  align-items: center;
   &::before {
     content: "";
-    position: absolute;
-    left: 0;
-    top: 50%;
     border-bottom: 0.2rem solid #000;
     width: 3rem;
-
+    margin-right: 1.5rem;
     @include media-min(SM) {
       width: 7rem;
+      margin-right: 2rem;
     }
     @include media-min(DD) {
       width: 10rem;
+    }
+  }
+  &.right {
+    &::before {
+      order: 1;
+      margin-left: 3rem;
+      flex-grow: 1;
+      border-bottom: 0.1rem solid $wbu-border-color;
+      margin-right: 0;
+      width: auto;
     }
   }
 }
