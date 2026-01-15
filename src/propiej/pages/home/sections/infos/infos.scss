@@ -1,0 +1,9 @@
+@use "../../../../_variables.scss" as *;
+.section-info {
+  .bloc-info {
+    max-width: 300px;
+    img {
+      max-width: 50px;
+    }
+  }
+}
