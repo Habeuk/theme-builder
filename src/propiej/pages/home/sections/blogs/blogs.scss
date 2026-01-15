@@ -1,0 +1,38 @@
+@use "../../../../_variables.scss" as *;
+
+.blogs {
+  background-color: $wbu-color-secondary;
+  color: color-yiq($wbu-color-secondary);
+  .titre-with-left-line {
+    &::before {
+      border-color: color-yiq($wbu-color-secondary);
+    }
+  }
+  .articles {
+    border-radius: 10px;
+    padding: $wbu-margin;
+    .article {
+      margin-bottom: $wbu-margin;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      img.img-article {
+        max-width: 200px;
+        min-height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+      .content-img {
+        width: 180px;
+        overflow: hidden;
+        border-radius: 10px;
+        position: relative;
+        margin-right: $wbu-margin;
+      }
+      .content-text {
+        width: calc(100% - 200px);
+      }
+    }
+  }
+}

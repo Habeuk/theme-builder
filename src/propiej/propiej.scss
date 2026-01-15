@@ -8,6 +8,7 @@
 :root {
   --bs-border-radius: 0.5rem;
   --bs-border-radius-sm: 0.5rem;
+  --bs-border-radius-lg: 0.5rem;
 }
 
 /**
@@ -24,6 +25,9 @@
   }
   &-sm {
     padding-inline: 2rem;
+  }
+  &-lg {
+    padding-inline: 3rem;
   }
 }
 /**
