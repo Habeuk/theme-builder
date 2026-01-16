@@ -1,0 +1,10 @@
+@use "../../../variables" as *;
+.partenaires-section {
+  .logos {
+    .item {
+      img {
+        max-width: 150px;
+      }
+    }
+  }
+}

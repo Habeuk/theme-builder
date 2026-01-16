@@ -9,6 +9,7 @@
     border-radius: 10px;
     overflow: hidden;
     width: 100%;
+    margin-bottom: -2rem;
     @include media-min(SM) {
       min-height: 448px;
       margin-bottom: -25rem;
