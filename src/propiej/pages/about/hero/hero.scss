@@ -2,14 +2,17 @@
 
 .hero-img-text {
   .content-img {
-    min-height: 300px;
+    min-height: 250px;
     background: url("/dist/propiej/images/about.jpg") no-repeat center center;
     background-size: cover;
     color: #fff;
     border-radius: 10px;
     overflow: hidden;
     width: 100%;
-    margin-bottom: -15rem;
+    @include media-min(SM) {
+      min-height: 448px;
+      margin-bottom: -25rem;
+    }
     &::before {
       content: "";
       position: absolute;
@@ -26,7 +29,7 @@
   }
   &__bottom-section {
     @include media-min(SM) {
-      padding-top: 20rem;
+      padding-top: 30rem;
     }
   }
   .titre-with-left-line::before {
