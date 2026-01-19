@@ -1,0 +1,12 @@
+@use "../../../variables" as *;
+.organigramme-section {
+  .organigramme-img {
+    img {
+      width: 100%;
+      border-radius: 10px;
+      height: auto;
+      min-width: 500px;
+      max-width: 1000px;
+    }
+  }
+}
