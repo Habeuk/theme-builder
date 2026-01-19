@@ -1,0 +1,21 @@
+@use "../../../variables" as *;
+
+.statistiques-section {
+  .statistique-item {
+    max-width: 200px;
+    width: 100%;
+    > .icon {
+      margin-bottom: $wbu-margin * 0.5;
+      svg {
+        width: 30px;
+      }
+    }
+  }
+  .statistique-number {
+    color: #000;
+  }
+  .statistique-label {
+    font-weight: bold;
+    text-align: center;
+  }
+}
