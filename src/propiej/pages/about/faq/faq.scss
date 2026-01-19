@@ -1,0 +1,39 @@
+@use "../../../variables" as *;
+
+.section-faq {
+  .accordion {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    @include media-min(DD) {
+      gap: 4rem;
+    }
+    .accordion-item {
+      @include media-min(DD) {
+        width: calc(50% - 2rem);
+      }
+      border: none;
+      box-shadow: 1px 11px 23px -17px #ccc;
+      .accordion-button {
+        font-weight: 600;
+        padding: 2.5rem 0;
+        padding-left: 4rem;
+        font-size: 110%;
+        position: relative;
+        background: transparent;
+        box-shadow: none;
+        &:focus {
+          box-shadow: none;
+        }
+        &::after {
+          left: 10px;
+          right: auto;
+          position: absolute;
+        }
+      }
+      .accordion-body {
+        padding: 0.5rem 2.5rem 2.5rem 2.5rem;
+      }
+    }
+  }
+}

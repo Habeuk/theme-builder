@@ -10,7 +10,9 @@
   --bs-border-radius-sm: 0.5rem;
   --bs-border-radius-lg: 0.5rem;
 }
-
+.container {
+  --bs-gutter-x: 3rem;
+}
 /**
  * Btn
  */
