@@ -1,0 +1,22 @@
+@use "../../../variables" as *;
+//@use "../../../../components/videos_players/videos_players.scss";
+@use "../../../components/videos_players/videos_players.scss";
+.text-video {
+  video {
+    width: 100%;
+  }
+  .video-content {
+    .paragraph__block_video__default {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  &.inverse {
+    .text-content {
+      order: 2;
+    }
+    .video-content {
+      order: 1;
+    }
+  }
+}
