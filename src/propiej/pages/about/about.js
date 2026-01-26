@@ -6,4 +6,4 @@ import "./statistiques/statistiques.js";
 import "./text_video/text_video.js";
 import "./organigramme/organigramme.js";
 import "./faq/faq.js";
-// import "../layouts/footer/footer.js";
+import "../layouts/footer/footer.js";

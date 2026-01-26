@@ -26,7 +26,7 @@ plugins.push(
   new MiniCssExtractPlugin({
     filename: "css/[name].css",
     chunkFilename: "[id].css",
-  })
+  }),
 );
 plugins.push(
   new HtmlWebpackPlugin({
@@ -41,7 +41,7 @@ plugins.push(
       return html;
     },
     title: " Template  " + CurrentThemeName,
-  })
+  }),
 );
 plugins.push(
   new (class OutputMonitor {
@@ -50,7 +50,7 @@ plugins.push(
         //console.log("entry : ", context);
       });
     }
-  })()
+  })(),
 );
 
 /* stan logic */
