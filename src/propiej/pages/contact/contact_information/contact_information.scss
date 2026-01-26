@@ -1,0 +1,16 @@
+@use "../../../variables" as *;
+.contact_information {
+  .items {
+    .item {
+      @include media-min(DD) {
+        min-width: 220px;
+        margin: 0 2rem;
+      }
+      svg {
+        width: 4rem;
+        height: 4rem;
+        fill: $wbu-color-primary;
+      }
+    }
+  }
+}

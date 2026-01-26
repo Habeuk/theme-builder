@@ -1,0 +1,20 @@
+@use "../../../variables" as *;
+
+.test-img-bg-section {
+  min-height: 300px;
+  position: relative;
+  background: url("/dist/propiej/images/bg-contact.jpg") no-repeat center center;
+  background-size: cover;
+  z-index: 1;
+  color: #fff;
+  &::before {
+    content: "";
+    background-color: rgba(#000, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+}
